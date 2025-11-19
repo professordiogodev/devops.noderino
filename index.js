@@ -2,7 +2,7 @@ const app = require("express")()
 require("dotenv").config()
 
 const desiredPath = process.env.DESIRED_PATH || "/"
-const port = process.env.PORT || 80
+const port = process.env.PORT || 8080
 const number = process.env.NUMBER || 0
 
 app.get(desiredPath, (req, res) => {

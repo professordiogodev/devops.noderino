@@ -12,6 +12,6 @@ If you're running this app on a debian linux server (like ubuntu), don't forget 
 2. Install dependencies:
 `npm install`
 3. Run the server:
-`node server.js`
+`node index.js`
 
 Have fun! :rocket:
