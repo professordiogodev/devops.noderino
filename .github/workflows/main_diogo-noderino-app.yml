@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B5002BD067B445B9867BA70DE9848875 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D5BDE1ABEC5F49FEBA7B14DABCB3DB6A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_12B746DAA88F4CAE854E2E8B8C6BC015 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -62,4 +62,5 @@ jobs:
           app-name: 'diogo-noderino-app'
           slot-name: 'Production'
           package: .
+
           
