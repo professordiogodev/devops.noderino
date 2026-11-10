@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 server.log
 .env
+hook-log.txt
+PR.md
